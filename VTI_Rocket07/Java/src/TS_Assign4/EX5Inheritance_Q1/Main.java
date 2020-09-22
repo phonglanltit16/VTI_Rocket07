@@ -43,8 +43,11 @@ public class Main {
 	}
 
 	public static void delCanBo() {
-		// TODO Auto-generated method stub
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap ho ten can bo muon xoa: ");
+		String hoTen = sc.nextLine();
+		canBo.removeIf(cb -> hoTen.equals(cb.getHoTen()));
+		sc.close();
 	}
 
 	public static void inputDSCanBo() {
@@ -53,10 +56,19 @@ public class Main {
 	}
 
 	public static void searchCanBo() {
-		// TODO Auto-generated method stub
-		
-	}
-
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Nhap ho ten can bo muon tim kiem: ");
+			String hoTen = sc.nextLine();
+			int ketQua=0;
+			for(CanBo person : canBo) {
+				if(person.getHoTen().equals(hoTen)) {
+					ketQua++;
+					person.getInfor();
+				}
+			}
+			System.out.println(ketQua+" ket qua tra ve!");
+			sc.close();
+		}
 	public static void addCanBo() {
 		CanBo newCanBo = new CanBo();
 		Scanner sc= new Scanner(System.in);
@@ -80,7 +92,7 @@ public class Main {
 		} else{
 			System.out.println("Nhập sai, Nhập lại");
 		}
-		
+		sc.close();
 	}
-
+	
 }
