@@ -1,4 +1,12 @@
 eclipse.preferences.version=1
+encoding//src/TS_Assign2/EX2_SystemOutPrintf.java=UTF-8
+encoding//src/TS_Assign2/Ex1_FlowControl.java=UTF-8
+encoding//src/TS_Assign2/Ex5_InputFromConsole1_7.java=UTF-8
+encoding//src/TS_Assign2/Ex5_InputFromConsoleQ891011.java=UTF-8
+encoding//src/TS_Assign2/Ex6_Method.java=UTF-8
+encoding//src/TS_Assign3/Ex1_DatatypeCasting.java=UTF-8
+encoding//src/TS_Assign3/Ex3_BoxingUnboxing.java=UTF-8
+encoding//src/TS_Assign3/Ex4_String.java=UTF-8
 encoding//src/TS_Assign4/EX4Encaplucation_Q1/Student.java=UTF-8
 encoding//src/TS_Assign4/EX5Inheritance_Q1/CanBo.java=UTF-8
 encoding//src/TS_Assign4/EX5Inheritance_Q1/CongNhan.java=UTF-8
@@ -9,3 +17,4 @@ encoding//src/TS_Assign4/EX5Inheritance_Q1/NhanVien.java=UTF-8
 encoding//src/TS_Assign4/EX5Inheritance_Q4/Main.java=UTF-8
 encoding//src/TS_Assign4/EX5Inheritance_Q4/TapChi.java=UTF-8
 encoding//src/TS_Assign5/EX2Polymorphism_Q5/Phone.java=UTF-8
+encoding//src/TS_Assign6/Ex1_Exception.java=UTF-8

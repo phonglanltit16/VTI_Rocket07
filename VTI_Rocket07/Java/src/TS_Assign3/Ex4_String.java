@@ -1,11 +1,11 @@
-package TS_lession_3;
+package TS_Assign3;
 
 import java.util.Scanner;
 
 public class Ex4_String {
 
 	public static void main(String[] args) {
-		//Question1();
+		Question1();
 		//Question2();
 		//Question3();
 		//Question4();
@@ -16,7 +16,7 @@ public class Ex4_String {
 		//Question9();??
 		//Question10();
 		//Question11();
-		//Question12();cách làm giống 1 phần Q10
+		//Question12();cÃ¡ch lÃ m giá»‘ng 1 pháº§n Q10
 		//Question13();
 		//Question14();
 		//Question15();
@@ -25,14 +25,14 @@ public class Ex4_String {
 		Question18();
 	}
 	public static void Question1(){
-		//nhập chuỗi từ bàn phím
+		//nhap chuoi tu ban phim
 		String input;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhập chuỗi:");
 		input = sc.nextLine();
-		// đếm từ 
+		// Ä‘áº¿m tá»« 
 		if (input == null) {
-			System.out.println("chuỗi không có từ nào cả");
+			System.out.println("Chuỗi không có từ nào cả");
         }
         int count = 0;
         int size = input.length();
@@ -47,23 +47,23 @@ public class Ex4_String {
                 notCounted = true;
             }
         }
-        System.out.println("Chuỗi có "+ count+ " từ. ");
+        System.out.println("Chuỗi có "+ count+ " từ ");
 		sc.close();
 	}
 	public static void Question2(){
 		String s1, s2;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập xâu kí tự s1:");
+		System.out.println("Nháº­p xÃ¢u kÃ­ tá»± s1:");
 		s1 = sc.nextLine();
-		System.out.println("Nhập xâu kí tự s2:");
+		System.out.println("Nháº­p xÃ¢u kÃ­ tá»± s2:");
 		s2 = sc.nextLine();
-		System.out.println("Nối s2 vào sau xâu s2 :"+s1+" " + s2);
+		System.out.println("Ná»‘i s2 vÃ o sau xÃ¢u s2 :"+s1+" " + s2);
 		sc.close();
 	}
 	public static void Question3(){
 		String ten,Ten;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập tên: ");
+		System.out.println("Nháº­p tÃªn: ");
 		ten = sc.nextLine();
     	Ten=ten.substring(0,1).toUpperCase()+ten.substring(1).toLowerCase();
 		System.out.println(Ten);
@@ -72,10 +72,10 @@ public class Ex4_String {
 	public static void Question4(){
 		String name;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập tên: ");
+		System.out.println("Nháº­p tÃªn: ");
 		name = sc.nextLine();
 		for(int i=0; i<name.length(); i++){
-			System.out.println("Kí tự thứ "+i+" là: "+name.toUpperCase().charAt(i) );
+			System.out.println("KÃ­ tá»± thá»© "+i+" lÃ : "+name.toUpperCase().charAt(i) );
 		}
 		sc.close();
 
@@ -83,38 +83,38 @@ public class Ex4_String {
 	public static void Question5(){
 		String ho5, ten5;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập họ:");
+		System.out.println("Nháº­p há»�:");
 		ho5 = sc.nextLine();
-		System.out.println("Nhập tên:");
+		System.out.println("Nháº­p tÃªn:");
 		ten5 = sc.nextLine();
-		System.out.println("Họ và tên là: "+ho5+" " + ten5);
+		System.out.println("Há»� vÃ  tÃªn lÃ : "+ho5+" " + ten5);
 		sc.close();
 	}
 	public static void Question6(){
 		String hovaten6,s1;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập họ và tên: ");
+		System.out.println("Nháº­p há»� vÃ  tÃªn: ");
 		hovaten6 = sc.nextLine();
-		//Loại bỏ dấu cách đầu và cuối chuỗi nhập vào
+		//Loáº¡i bá»� dáº¥u cÃ¡ch Ä‘áº§u vÃ  cuá»‘i chuá»—i nháº­p vÃ o
 		hovaten6=hovaten6.trim();
         int k;
         for(k=hovaten6.length()-1;k>=0;k--){
             s1=hovaten6.substring(k,k+1);
             if(s1.equals(" ")) break;
         	}
-        System.out.println("Tên: "+ hovaten6.substring(k+1));
+        System.out.println("TÃªn: "+ hovaten6.substring(k+1));
         int i;
         for(i=0;i<=hovaten6.length();i++){
            s1=hovaten6.substring(i,i+1);
             if(s1.equals(" ")) break;
         	}
-        System.out.println("Họ: "+ hovaten6.substring(0,i));
+        System.out.println("Há»�: "+ hovaten6.substring(0,i));
         int j = 0;
     
         if(j>i&&j<k){
             s1=hovaten6.substring(j,j+1);
         	}
-        System.out.println("Tên đệm: "+hovaten6.substring(i+1,k));
+        System.out.println("TÃªn Ä‘á»‡m: "+hovaten6.substring(i+1,k));
     
 		/*
 		 String  ho6, ten6;
@@ -122,27 +122,27 @@ public class Ex4_String {
 		ho6 = words6[0];
 		ten6= words6[words6.length-1];
 		//dem6= words6[words6.length-1];
-		System.out.println("Họ là: "+ho6);
-		System.out.println("Tên là: "+ten6);
+		System.out.println("Há»� lÃ : "+ho6);
+		System.out.println("TÃªn lÃ : "+ten6);
 		*/
 		sc.close();
 	}
 	public static void Question7(){
-		//câu a: 
+		//cau a: 
 		String hovaten7;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập họ và tên: ");
+		System.out.println("Nháº­p há»� vÃ  tÃªn: ");
 		hovaten7 = sc.nextLine();
-		//Loại bỏ dấu cách đầu và cuối chuỗi nhập vào
+
 		hovaten7=hovaten7.trim();
-		// câu b:
+		// cau b:
 		String[] arr = hovaten7.split(" ");
 		String hovaten7_1 = "";
 		for (String x : arr) {
 			hovaten7_1 = hovaten7_1 + (x.substring(0, 1).toUpperCase() + x.substring(1).toLowerCase());
 			hovaten7_1 = hovaten7_1 + " ";
 		}
-		System.out.println("Biến các chữ đầu thành hoa: " + hovaten7_1);
+		System.out.println("Biến các chữ cái thành in hoa: " + hovaten7_1);
 		sc.close();
 	}
 	public static void Question8(){
@@ -157,22 +157,22 @@ public class Ex4_String {
 		;
 		if(str1.reverse().equals(str2)){
 		*/	
-		//Nhập 2 xâu từ bàn phím
+		//Nháº­p 2 xÃ¢u tá»« bÃ n phÃ­m
 		String str1,str2;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập xâu kí tự 1: ");
+    	System.out.println("Nháº­p xÃ¢u kÃ­ tá»± 1: ");
     	str1= sc.nextLine();
-    	System.out.println("Nhập xâu kí tự 2: ");
+    	System.out.println("Nháº­p xÃ¢u kÃ­ tá»± 2: ");
     	str2= sc.nextLine();
-    	//kiểm tra str1 và str2 có phải xâu đảo không 
-    		//tìm xâu đảo của str1(chuyển từ xâu sang mảng kí tự để đảo)
+    	//kiá»ƒm tra str1 vÃ  str2 cÃ³ pháº£i xÃ¢u Ä‘áº£o khÃ´ng 
+    		//tÃ¬m xÃ¢u Ä‘áº£o cá»§a str1(chuyá»ƒn tá»« xÃ¢u sang máº£ng kÃ­ tá»± Ä‘á»ƒ Ä‘áº£o)
     	char[] xauDaoStr1=str1.toCharArray();
     	for(int i=0;i<str1.length()/2;i++){		    		 
             char temp=xauDaoStr1[i];		   
             xauDaoStr1[i]=xauDaoStr1[xauDaoStr1.length-i-1];
             xauDaoStr1[xauDaoStr1.length-i-1]=temp;		   
        }		   
-    	//Chuyển mảng kí tự thành xâu		   
+    	//Chuyá»ƒn máº£ng kÃ­ tá»± thÃ nh xÃ¢u		   
        String ketqua= String.valueOf(xauDaoStr1);		   
        if(ketqua.equals(str2)){
     	   System.out.println("OK");    	   
@@ -186,23 +186,9 @@ public class Ex4_String {
     	
     	char kitu=0;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập xâu: ");
+    	System.out.println("Nháº­p xÃ¢u: ");
     	str11 = sc.nextLine();
-    	/*
-    	  // đang không in ra kí tự unipue ở vị trí đầu tiên, mà là cuối cùng???????
-    	int result=1;
-    	for (int i = 0; i < str11.length()-1; i++) {
-        	for (int j = i+1; j < str11.length(); j++) {
-        		if (str11.charAt(i)==str11.charAt(j) ){  continue;      
-        		}result=0;
-        		kitu=str11.charAt(i);
-        	}
-    	}
-    	if(result==1){
-        	System.out.println("NO");
-    	}else{
-    		System.out.println("Kí tự unique là: "+ kitu);
-    	}*/
+    	
     	int dem=0;		    
     	for (int i = 0; i < str11.length()-1; i++) {
         	for (int j = i+1; j < str11.length(); j++) {
@@ -214,7 +200,7 @@ public class Ex4_String {
         	}
     	}
         	if(dem==0){
-    		    System.out.println("Kí tự unique là: "+ kitu);
+    		    System.out.println("KÃ­ tá»± unique lÃ : "+ kitu);
 		    }else{
 		    	System.out.println("NO");
 		    }
@@ -224,7 +210,7 @@ public class Ex4_String {
 	public static void Question13(){
 		String str13;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập chuỗi(chuỗi không chứa chữ số): ");
+    	System.out.println("Nháº­p chuá»—i(chuá»—i khÃ´ng chá»©a chá»¯ sá»‘): ");
     	str13 = sc.nextLine();
 		for (int i = 0; i < str13.length(); i++) {
             if (Character.isLetter(str13.charAt(i))) {
@@ -240,15 +226,15 @@ public class Ex4_String {
 	public static void Question14(){
 		String str14;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập chuỗi: ");
+    	System.out.println("Nháº­p chuá»—i: ");
     	str14 = sc.nextLine();
-    	System.out.println("Chuỗi đã đổi: "+ str14.replace('e','*'));
+    	System.out.println("Chuá»—i Ä‘Ã£ Ä‘á»•i: "+ str14.replace('e','*'));
 	    sc.close();
 	}
 	public static void Question15(){
 		String str15;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập chuỗi: ");
+    	System.out.println("Nháº­p chuá»—i: ");
     	str15 = sc.nextLine();
     	str15.trim();    	
     	String[] words15 = str15.split(" ");
@@ -266,14 +252,14 @@ public class Ex4_String {
 		String str16;
 		int n;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập chuỗi: ");
+    	System.out.println("Nháº­p chuá»—i: ");
     	str16 = sc.nextLine();
-    	System.out.println("Nhập n(n là số nguyên): ");
+    	System.out.println("Nháº­p n(n lÃ  sá»‘ nguyÃªn): ");
     	n = sc.nextInt();
-    	System.out.println("Chia chuỗi thành các phần bằng nhau gồm "+ n+" kí tự được không? ");
+    	System.out.println("Chia chuá»—i thÃ nh cÃ¡c pháº§n báº±ng nhau gá»“m "+ n+" kÃ­ tá»± Ä‘Æ°á»£c khÃ´ng? ");
     	char[] str16_1=str16.toCharArray();
     	if(str16_1.length%n==0){
-    		System.out.println("Được");
+    		System.out.println("Ä�Æ°á»£c");
     	}else{
     		System.out.println("KO");
     	}
@@ -283,9 +269,9 @@ public class Ex4_String {
 		String str11;
     	char kitu=0;
     	Scanner sc = new Scanner(System.in);
-    	System.out.println("Nhập xâu: ");
+    	System.out.println("Nháº­p xÃ¢u: ");
     	str11 = sc.nextLine();
-    	System.out.print("Kí tự xuất hiện nhiều hơn 1 lần là: ");
+    	System.out.print("KÃ­ tá»± xuáº¥t hiá»‡n nhiá»�u hÆ¡n 1 láº§n lÃ : ");
     	for (int i = 0; i < str11.length()-1; i++) {
         	for (int j = i+1; j < str11.length(); j++) {
         		if (str11.charAt(i)==str11.charAt(j) ){

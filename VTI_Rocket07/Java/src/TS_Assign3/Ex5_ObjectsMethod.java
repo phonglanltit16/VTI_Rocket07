@@ -1,4 +1,4 @@
-package TS_lession_3;
+package TS_Assign3;
 
 public class Ex5_ObjectsMethod {
 	

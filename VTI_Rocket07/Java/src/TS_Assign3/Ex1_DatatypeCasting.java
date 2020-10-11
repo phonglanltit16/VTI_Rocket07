@@ -1,4 +1,4 @@
-package TS_lession_3;
+package TS_Assign3;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -29,7 +29,7 @@ public class Ex1_DatatypeCasting {
 		System.out.printf("%05d",a);
 		System.out.println("\n");
 		b=a+"";
-		System.out.println("Chuỗi b là: "+b);
+		System.out.println("Chuá»—i b lÃ : "+b);
 		System.out.println(b.substring(3, 5));
 	}
 	
@@ -44,7 +44,7 @@ public class Ex1_DatatypeCasting {
 		System.out.println("Nhập số b:");
 	    b = sc.nextInt();
 	    
-	    System.out.println("Thương của 2 a và b là:"+ (float)a/b);
+	    System.out.println("Thương của 2 số a và b là :"+ (float)a/b);
 	    
 		sc.close();
 	}
